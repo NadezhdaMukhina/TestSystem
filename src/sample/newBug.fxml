@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="242.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.newBugController">
+   <children>
+      <HBox layoutX="7.0" layoutY="137.0" prefHeight="43.0" prefWidth="733.0">
+         <children>
+            <TextField fx:id="progectBugText" prefHeight="42.0" prefWidth="100.0" />
+            <TextField fx:id="topicBugText" prefHeight="42.0" prefWidth="100.0" />
+            <TextField fx:id="typeBugText" prefHeight="42.0" prefWidth="100.0" />
+            <TextField fx:id="priorityBugText" prefHeight="42.0" prefWidth="100.0" />
+            <TextField fx:id="personBugText" prefHeight="42.0" prefWidth="109.0" />
+            <TextArea fx:id="descripBugText" prefHeight="43.0" prefWidth="223.0" />
+         </children>
+      </HBox>
+      <Button fx:id="addBugButton" layoutX="22.0" layoutY="191.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="182.0" text="Добавить запись" />
+      <Button fx:id="deleteBugButton" layoutX="543.0" layoutY="191.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="182.0" text="Удалить запись" />
+      <Label layoutX="158.0" layoutY="14.0" text="Укажите данные для добавления/удаления:" textFill="#a10b0b">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <HBox layoutX="15.0" layoutY="108.0" prefHeight="27.0" prefWidth="717.0">
+         <children>
+            <CheckBox fx:id="progectCheck" mnemonicParsing="false" prefHeight="18.0" prefWidth="101.0" selected="true" text="Проект" />
+            <CheckBox fx:id="topicCheck" mnemonicParsing="false" prefHeight="18.0" prefWidth="101.0" selected="true" text="Тема" />
+            <CheckBox fx:id="typeCheck" mnemonicParsing="false" prefHeight="18.0" prefWidth="82.0" selected="true" text="Тип" />
+            <CheckBox fx:id="priorityCheck" mnemonicParsing="false" prefHeight="18.0" prefWidth="100.0" selected="true" text="Приоритет" />
+            <CheckBox fx:id="personCheck" mnemonicParsing="false" prefHeight="18.0" prefWidth="150.0" selected="true" text="Исполнитель" />
+            <CheckBox fx:id="descriptionCheck" mnemonicParsing="false" prefHeight="18.0" prefWidth="143.0" selected="true" text="Описание" />
+         </children>
+      </HBox>
+      <Label layoutX="14.0" layoutY="70.0" text="Отметьте атрибуты задачи, по которым необходимо сделать выборку для удаления" textFill="#807676" />
+   </children>
+</AnchorPane>
